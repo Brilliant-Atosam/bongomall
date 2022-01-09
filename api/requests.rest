@@ -1,0 +1,20 @@
+GET http://localhost:8000/api/users
+###
+POST http://localhost:8000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "Ras Bongo",
+    "email": "ras@sam.me",
+    "password": "samsam1",
+    "password2": "samsam1",
+    "profile":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyCbJoUCRscGfzySEtqoR5HtHnEOE0ux4r-A&usqp=CAU"
+}
+###
+POST http://localhost:8000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "Sam Updated",
+    "password": "samsam1"
+}
